@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Segmentation Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scene Segmentation Viewer</h1>
+        
+        <div class="movie-selector">
+            <button class="movie-btn active" data-movie="demo-movie">Movie 1</button>
+            <button class="movie-btn" data-movie="demo-movie">Movie 2</button>
+            <button class="movie-btn" data-movie="demo-movie">Movie 3</button>
+        </div>
+
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source src="demo-movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="segments-container">
+            <h2>Scene Segments</h2>
+            <div id="segmentsList" class="segments-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
