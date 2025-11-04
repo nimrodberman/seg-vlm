@@ -59,7 +59,7 @@ movieButtons.forEach(button => {
         button.classList.add('active');
         
         // For now, all movies use the same demo file
-        videoPlayer.src = 'demo-movie.mp4';
+        videoPlayer.src = 'https://github.com/nimrodberman/seg-vlm/releases/download/demo1/demo-movie.mp4';
         loadSegments();
     });
 });
